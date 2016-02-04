@@ -18,6 +18,10 @@ sudo su ubuntu -c "./stack.sh"
 cp /home/ubuntu/devstack/accrc/admin/admin /home/ubuntu
 SCRIPT
 
+# TODO clone git repo instead of sync folder
+# sudo su ubuntu -c "cd ~ && git clone https://github.com/CCI-MOC/k2k-fed.git"
+# NOTE this changes the directory name so make sure everything changes with it
+
 # script to set up k2k in Service Provider
 $script_k2k_sp = <<SCRIPT
 sudo su ubuntu <<'EOF'
